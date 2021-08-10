@@ -10,7 +10,7 @@ class Modularity:
     def modularityOverlap(self,graph,nodeCliuster):
         self.watch.start()
         fitness = evaluation.modularity_overlap(graph, nodeCliuster)
-        self.elapsedTime=self.watch.stop()
+        self.elapsed_time=self.watch.stop()
         return fitness
     def elapsedTime(self):
         if self.elapsed_time is None :

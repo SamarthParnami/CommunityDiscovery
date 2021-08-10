@@ -27,7 +27,7 @@ class Stopwatch:
             raise TimerError(f"Timer is not running. Use .start() to start it")
         if self._stop_time is None:
             raise TimerError(f"Timer is running. Use .stop() to stop it")
-        return self._stop_time-self._stop_time
+        return self._stop_time-self._start_time
 
 
     def reset(self):
